@@ -1,31 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLinearLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/colorWhite">
+    android:background="@android:color/white">
 
 
-    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.v7.widget.GridLayout
         android:id="@+id/mainGrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:columnCount="3"
-        android:rowCount="4"
-        android:orientation="horizontal"
-        android:background="@color/colorGray"
-        android:layout_weight="0.8">
+        app:columnCount="3"
+        app:rowCount="4"
+        app:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.9">
 
-    </GridLayout>
+        <TextView
+            android:id="@+id/textView00"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView01"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView02"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView31"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+        <TextView
+            android:id="@+id/textView32"
+            style="@style/dataStyle"
+            android:text="@string/app_data"/>
+
+
+    </android.support.v7.widget.GridLayout>
 
     <LinearLayout
         android:id="@+id/buttonLayout"
-        android:background="@color/colorWhite"
+        android:background="@android:color/white"
         android:layout_height="0dp"
         android:layout_width="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="horizontal">
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <ImageButton
+            android:id="@+id/call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_call"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/app_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/button_data"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/sms_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/sym_action_email"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 </LinearLayout>
